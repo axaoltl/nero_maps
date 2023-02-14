@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <title>NeRo maps</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="./assets/images/new_map_test.png" alt="map">
+        <div class="layer_airports">
+            <div class="icon_layer-box position_box-airport">
+                <img src="./assets/images/airport_icon.jpg" alt="airport"> 
+                <article class="popup popup_airport" id="location-1">
+                    <h3>
+                        Lorem, ipsum.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque adipisci aliquam unde suscipit!
+                        Quia, itaque error, eaque perferendis possimus rem fuga, aperiam ullam odio at sapiente.
+                        Excepturi voluptate totam eveniet!
+                    </p>
+                    <div class="popup_gallery">
+                        <div><img src="/assets/description_gallery/townhall/1.png" alt=""></div>
+                        <div><img src="/assets/description_gallery/townhall/2.png" alt=""></div>
+                        <div><img src="/assets/description_gallery/townhall/3.png" alt=""></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="layer_subways">
+            <div class="icon_layer-box black_border position_box-subway-mont">
+                <img src="./assets/images/subway_icon.jpg" alt="subway">
+                <article class="popup popup_airport" id="location-2">
+                    <h3>
+                        Lorem, ipsum.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque adipisci aliquam unde suscipit!
+                        Quia, itaque error, eaque perferendis possimus rem fuga, aperiam ullam odio at sapiente.
+                        Excepturi voluptate totam eveniet!
+                    </p>
+                    <div class="popup_gallery">
+                        <div><img src="/assets/description_gallery/townhall/1.jpg" alt=""></div>
+                        <div><img src="/assets/description_gallery/townhall/2.jpg" alt=""></div>
+                        <div><img src="/assets/description_gallery/townhall/3.jpg" alt=""></div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="icon_layer-box black_border position_box-subway-cala">
+                <img src="./assets/images/subway_icon.jpg" alt="subway">
+            </div>
+            <div class="icon_layer-box black_border position_box-subway-fern">
+                <img src="/assets/images/subway_icon.jpg" alt="subway">
+            </div>
+        </div>
+        <div class="layer_greenhouses">
+            <div class="icon_layer-box black_border position_box-greenhouse-1">
+                <img src="/assets/images/greenhouse_icon.png" alt="greenhouse">
+            </div>
+            <div class="icon_layer-box black_border position_box-greenhouse-2">
+                <img src="/assets/images/greenhouse_icon.png" alt="greenhouse">
+            </div>
+            <div class="icon_layer-box black_border position_box-greenhouse-3">
+                <img src="/assets/images/greenhouse_icon.png" alt="greenhouse">
+            </div>
+            <div class="icon_layer-box black_border position_box-greenhouse-4">
+                <img src="/assets/images/greenhouse_icon.png" alt="greenhouse">
+            </div>
+            <div class="icon_layer-box black_border position_box-greenhouse-5">
+                <img src="/assets/images/greenhouse_icon.png" alt="greenhouse">
+            </div>
+            <div class="icon_layer-box black_border position_box-greenhouse-6">
+                <img src="/assets/images/greenhouse_icon.png" alt="greenhouse">
+            </div>
+        </div>
+        <div class="layer_drugs">
+            <div class="icon_layer-box black_border position_box-weed-florist">
+                <img src="/assets/images/weed_florist_icon.jpg" alt="weed_florist">
+            </div>
+            <div class="icon_layer-box black_border position_box-cocaine">
+                <img src="/assets/images/cocaine_icon1.jpg" alt="cocaine">
+            </div>
+        </div>
+        <div class="layer_apartments">
+            <div class="icon_layer-box black_border position_box-apartment-mont-beach">
+                <img src="/assets/images/apartment_icon.png" alt="apartment_mont-beach">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-cala-river-1">
+                <img src="/assets/images/apartment_icon.png" alt="apartment-cala-river">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-cala-river-2">
+                <img src="/assets/images/apartment_icon.png" alt="apartment-cala-river">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-lumberjack-1">
+                <img src="/assets/images/apartment_icon.png" alt="apartment-lumberjack">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-lumberjack-2">
+                <img src="/assets/images/apartment_icon.png" alt="apartment-lumberjack">
+            </div>
+        </div>
+        <div class="layer_apartment-buildings">
+            <div class="icon_layer-box black_border position_box-apartment-buildings-fern-1">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-buildings-fern-2">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-buildings-fern-3">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-buildings-mont-1">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-buildings-mont-2">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-buildings-mont-3">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-buildings-mont-4">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-buildings-mont-5">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-buildings-chester">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-buildings-cala-1">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-buildings-cala-2">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-buildings-cala-3">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+            <div class="icon_layer-box black_border position_box-apartment-buildings-cala-4">
+                <img src="/assets/images/apartment_building_icon.jpg" alt="apartment_buildings">
+            </div>
+        </div>
+        <div class="layer_banks">
+            <div class="icon_layer-box black_border position_box-bank-cala-1">
+                <img src="/assets/images/bank_icon.png" alt="bank">
+            </div>
+            <div class="icon_layer-box black_border position_box-bank-mall">
+                <img src="/assets/images/bank_icon.png" alt="bank">
+            </div>
+            <div class="icon_layer-box black_border position_box-bank-fern">
+                <img src="/assets/images/bank_icon.png" alt="bank">
+            </div>
+            <div class="icon_layer-box black_border position_box-bank-mont">
+                <img src="/assets/images/bank_icon.png" alt="bank">
+            </div>
+        </div>
+        <div class="layer_gas-stations">
+            <div class="icon_layer-box black_border position_box-gas-station-chester">
+                <img src="/assets/images/gas_station_icon.png" alt="gas_station">
+            </div>
+            <div class="icon_layer-box black_border position_box-gas-station-fern">
+                <img src="/assets/images/gas_station_icon.png" alt="gas_station">
+            </div>
+            <div class="icon_layer-box black_border position_box-gas-station-cala">
+                <img src="/assets/images/gas_station_icon.png" alt="gas_station">
+            </div>
+        </div>
+        <div class="layer_shops">
+            <div class="icon_layer-box black_border position_box-boat-shop">
+                <img src="/assets/images/boat_shop_icon.png" alt="boat_shop">
+            </div>
+            <div class="icon_layer-box black_border position_box-miner">
+                <img src="/assets/images/miner_icon.jpg" alt="miner">
+            </div>
+            <div class="icon_layer-box black_border position_box-hardware-shop-mall">
+                <img src="/assets/images/hardware_shop.png" alt="hardware_shop">
+            </div>
+            <div class="icon_layer-box black_border position_box-hardware-shop-fern">
+                <img src="/assets/images/hardware_shop.png" alt="hardware_shop">
+            </div>
+            <div class="icon_layer-box black_border position_box-lumberjack">
+                <img src="/assets/images/lumberjack_icon.png" alt="lumberjack">
+            </div>
+            <div class="icon_layer-box black_border position_box-mechanic">
+                <img src="/assets/images/mechanic_icon.jpg" alt="mechanic">
+            </div>
+            <div class="icon_layer-box black_border position_box-car-repair">
+                <img src="/assets/images/car_repair_icon.png" alt="car_repair">
+            </div>
+            <div class="icon_layer-box black_border position_box-old-guns-shop">
+                <img src="/assets/images/old_gun_shop.png" alt="old_guns">
+            </div>
+            <div class="icon_layer-box black_border position_box-gun-shop">
+                <img src="/assets/images/gun_store_icon.jpg" alt="gun_shop">
+            </div>
+            <div class="icon_layer-box black_border position_box-outdoors-cala">
+                <img src="/assets/images/outdoors_icon.png" alt="outdoors_shop">
+            </div>
+            <div class="icon_layer-box black_border position_box-outdoors-fern">
+                <img src="/assets/images/outdoors_icon.png" alt="outdoors_shop">
+            </div>
+            <div class="icon_layer-box black_border position_box-outdoors-mont">
+                <img src="/assets/images/outdoors_icon.png" alt="outdoors_shop">
+            </div>
+            <div class="icon_layer-box black_border position_box-electronic-shop">
+                <img src="/assets/images/electronic_icon.jpg" alt="electronic_shop">
+            </div>
+            <div class="icon_layer-box black_border position_box-cloths-cool-mall">
+                <img src="/assets/images/cloths_cool.jpg" alt="cloths_cool">
+            </div>
+            <div class="icon_layer-box black_border position_box-cloths-cool-mont">
+                <img src="/assets/images/cloths_cool.jpg" alt="cloths_cool">
+            </div>
+            <div class="icon_layer-box black_border position_box-cloths-mont">
+                <img src="/assets/images/cloths.png" alt="cloths_cool">
+            </div>
+            <div class="icon_layer-box black_border position_box-florist">
+                <img src="/assets/images/florist_icon.jpg" alt="florist">
+            </div>
+            <div class="icon_layer-box black_border position_box-fast-food-mall">
+                <img src="/assets/images/fast_food_icon.jpg" alt="fast_food">
+            </div>
+            <div class="icon_layer-box black_border position_box-fast-food-fern">
+                <img src="/assets/images/fast_food_icon.jpg" alt="fast_food">
+            </div>
+            <div class="icon_layer-box black_border position_box-fast-food-chester">
+                <img src="/assets/images/fast_food_icon.jpg" alt="fast_food">
+            </div>
+            <div class="icon_layer-box black_border position_box-grocery">
+                <img src="/assets/images/grocery_shop_icon.png" alt="grocery">
+            </div>
+            <div class="icon_layer-box black_border position_box-cloths">
+                <img src="/assets/images/cloths.png" alt="cloths">
+            </div>
+            <div class="icon_layer-box black_border position_box-forniture">
+                <img src="/assets/images/forniture_shop_icon.png" alt="forniture">
+            </div>
+            <div class="icon_layer-box black_border position_box-car-shop">
+                <img src="/assets/images/car_shop_icon.png" alt="car_shop">
+            </div>
+        </div>
+        <div class="layer_item-spawns">
+            <div class="icon_layer-box black_border position_box-farm">
+                <img src="/assets/images/farm_icon.png" alt="farm">
+            </div>
+        </div>
+        <div class="layer_2-story-houses">
+            <div class="icon_layer-box black_border position_box-2-story-house-elm-1">
+                <img src="/assets/images/2_story_house_icon.jpg" alt="2_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-2-story-house-lumberjack">
+                <img src="/assets/images/2_story_house_icon.jpg" alt="2_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-hills-4">
+                <img src="/assets/images/2_story_house_icon.jpg" alt="2_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-hills-5">
+                <img src="/assets/images/2_story_house_icon.jpg" alt="2_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-2-story-house-rockwall-3">
+                <img src="/assets/images/2_story_house_icon.jpg" alt="2_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-2-story-house-rockwall-7">
+                <img src="/assets/images/2_story_house_icon.jpg" alt="2_story-house">
+            </div>
+        </div>
+        <div class="layer_1-story-houses">
+            <div class="icon_layer-box black_border position_box-1-story-house-elm-2">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-elm-3">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-elm-4">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-elm-5">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-elm-6">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-elm-7">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-tower-lumberjack">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-lumberjack">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-hills-1">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-hills-2">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-hills-3">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-hills-6">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-hills-7">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-hills-8">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-rockwall-1">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-rockwall-2">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-rockwall-4">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-rockwall-5">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-rockwall-6">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-rockwall-8">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-rockwall-9">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-rockwall-10">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-rockwall-11">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+            <div class="icon_layer-box black_border position_box-1-story-house-rockwall-12">
+                <img src="/assets/images/1_story_house_icon.jpg" alt="1_story-house">
+            </div>
+        </div>
+        <div class="layer_resources">
+            <div class="icon_layer-box black_border position_oil-rig">
+                <img src="/assets/images/oil_rig_icon.jpg" alt="oil_rig">
+            </div>
+            <div class="icon_layer-box black_border position_chemicals">
+                <img src="/assets/images/barrel_chemicals.jpg" alt="chemicals">
+            </div>
+        </div>
+        <div class="layer_item-yachts">
+            <div class="icon_layer-box black_border position_box-yacht-1">
+                <img src="/assets/images/yacht_icon.png" alt="yacht">
+            </div>
+            <div class="icon_layer-box black_border position_box-yacht-2">
+                <img src="/assets/images/yacht_icon.png" alt="yacht">
+            </div>
+            <div class="icon_layer-box black_border position_box-yacht-3">
+                <img src="/assets/images/yacht_icon.png" alt="yacht">
+            </div>
+            <div class="icon_layer-box black_border position_box-yacht-4">
+                <img src="/assets/images/yacht_icon.png" alt="yacht">
+            </div>
+        </div>
+        <div class="layer_mansions">
+            <div class="icon_layer-box black_border position_box-mansion-cala-1">
+                <img src="/assets/images/mansion_icon.png" alt="mansion">
+            </div>
+            <div class="icon_layer-box black_border position_box-mansion-cala-2">
+                <img src="/assets/images/mansion_icon.png" alt="mansion">
+            </div>
+                <div class="icon_layer-box black_border position_box-mansion-cala-3">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+                <div class="icon_layer-box black_border position_box-mansion-island-1">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+                <div class="icon_layer-box black_border position_box-mansion-island-2">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+                <div class="icon_layer-box black_border position_box-mansion-island-3">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+                <div class="icon_layer-box black_border position_box-mansion-island-4">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>  
+                <div class="icon_layer-box black_border position_box-mansion-island-5">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+                <div class="icon_layer-box black_border position_box-mansion-island-6">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+                <div class="icon_layer-box black_border position_box-mansion-big-sur-1">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+                <div class="icon_layer-box black_border position_box-mansion-big-sur-2">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+                <div class="icon_layer-box black_border position_box-mansion-la-palma-1">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+                <div class="icon_layer-box black_border position_box-mansion-la-palma-2">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+                <div class="icon_layer-box black_border position_box-mansion-la-palma-3">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+                <div class="icon_layer-box black_border position_box-mansion-la-palma-4">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+                <div class="icon_layer-box black_border position_box-mansion-la-palma-5">
+                    <img src="/assets/images/mansion_icon.png" alt="mansion">
+                </div>
+        </div>
+        <div class="layer_hangars">
+            <div class="icon_layer-box black_border position_box-hangar-island-1">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-island-2">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-island-3">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-island-4">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-island-5">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-1">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-2">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-3">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-4">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-5">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-6">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-7">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-8">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+            <div class="icon_layer-box black_border position_box-hangar-9">
+                <img src="/assets/images/hangar_icon.png" alt="hangar">
+            </div>
+        </div>
+        <div class="layer_others">
+            <div class="icon_layer-box black_border position_box-resource-trader">
+                <img src="/assets/images/resource_trader_icon.png" alt="resource_trader">
+            </div>
+            <div class="icon_layer-box black_border position_box-smelter">
+                <img src="/assets/images/smelter_icon.png" alt="industrial_smelter">
+            </div>
+            <div class="icon_layer-box black_border position_box-mine-1">
+                <img src="/assets/images/mine_icon.png" alt="mine">
+            </div>
+            <div class="icon_layer-box black_border position_box-mine-2">
+                <img src="/assets/images/mine_icon.png" alt="mine">
+            </div>
+            <div class="icon_layer-box black_border position_box-townhall">
+                <img src="/assets/images/townhall_icon.jpg" alt="townhall">
+            </div>
+            <div class="icon_layer-box black_border position_box-school">
+                <img src="/assets/images/school_icon.jpg" alt="school">
+            </div>
+            <div class="icon_layer-box black_border position_box-art-gallery">
+                <img src="/assets/images/art_gallery_icon.png" alt="art_gallery">
+            </div>
+        </div>
+        <div class="layer_garages">
+            <div class="icon_layer-box black_border position_box-garage-cala">
+                <img src="/assets/images/garage_icon.png" alt="garage">
+            </div>
+            <div class="icon_layer-box black_border position_box-garage-fern-1">
+                <img src="/assets/images/garage_icon.png" alt="garage">
+            </div>
+            <div class="icon_layer-box black_border position_box-garage-fern-2">
+                <img src="/assets/images/garage_icon.png" alt="garage">
+            </div>
+            <div class="icon_layer-box black_border position_box-garage-fern-3">
+                <img src="/assets/images/garage_icon.png" alt="garage">
+            </div>
+            <div class="icon_layer-box black_border position_box-garage-mont">
+                <img src="/assets/images/garage_icon.png" alt="garage">
+            </div>
+        </div>
+        <div class="layer_cafes">
+            <div class="icon_layer-box black_border position_box-cafe-cala-1">
+                <img src="/assets/images/cafe.png" alt="cafe">
+            </div>
+            <div class="icon_layer-box black_border position_box-cafe-cala-2">
+                <img src="/assets/images/cafe.png" alt="cafe">
+            </div>
+            <div class="icon_layer-box black_border position_box-cafe-island">
+                <img src="/assets/images/cafe.png" alt="cafe">
+            </div>
+            <div class="icon_layer-box black_border position_box-cafe-mont-1">
+                <img src="/assets/images/cafe.png" alt="cafe">
+            </div>
+            <div class="icon_layer-box black_border position_box-cafe-mont-2">
+                <img src="/assets/images/cafe.png" alt="cafe">
+            </div>
+            <div class="icon_layer-box black_border position_box-cafe-rockwall">
+                <img src="/assets/images/cafe.png" alt="cafe">
+            </div>
+        </div>
+        <div class="layer_pd-stations">
+            <div class="icon_layer-box black_border position_box-pd-station-mall">
+                <img src="/assets/images/pd_icon.png" alt="pd_station">
+            </div>
+            <div class="icon_layer-box black_border position_box-pd-station-fern">
+                <img src="/assets/images/pd_icon.png" alt="pd_station">
+            </div>
+            <div class="icon_layer-box black_border position_box-pd-station-fern">
+                <img src="/assets/images/pd_icon.png" alt="pd_station">
+            </div>
+            <div class="icon_layer-box black_border position_box-pd-station-cala">
+                <img src="/assets/images/pd_icon.png" alt="pd_station">
+                <article class="popup popup_airport">
+                    <h3>
+                        Lorem, ipsum.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque adipisci aliquam unde suscipit!
+                        Quia, itaque error, eaque perferendis possimus rem fuga, aperiam ullam odio at sapiente.
+                        Excepturi voluptate totam eveniet!
+                    </p>
+                    <div class="popup_gallery">
+                        <div><img src="/assets/description_gallery/townhall/1.jpg" alt=""></div>
+                        <div><img src="/assets/description_gallery/townhall/2.jpg" alt=""></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="layer_hospitals">
+            <div class="icon_layer-box black_border position_box-hospital-mall">
+                <img src="/assets/images/hospital_icon.png" alt="hospital">
+            </div>
+            <div class="icon_layer-box black_border position_box-hospital-cala">
+                <img src="/assets/images/hospital_icon.png" alt="hospital">
+            </div>
+            <div class="icon_layer-box black_border position_box-hospital-mont">
+                <img src="/assets/images/hospital_icon.png" alt="hospital">
+            </div>
+        </div>
+    </div>
+    <aside class="left">
+        <h1>Welcome to NeRo's maps!</h1>
+        <div class="panel">
+            <div class="panel_list">
+                <ul>
+                    <li>berries</li>
+                    <li>shops</li>
+                    <li>apartments</li>
+                </ul>
+            </div>
+            <div class="panel_choice">
+                <div class="panel_choice-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum fuga
+                    accusamus quod, placeat, cupiditate architecto at laudantium pariatur consectetur tempora magni
+                    asperiores sequi. Reiciendis delectus explicabo ipsam est exercitationem dolorum?</div>
+                <div class="panel_choice-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque hic
+                    iure
+                    aperiam tenetur est repellendus distinctio dolor, cumque, similique laboriosam asperiores atque
+                    facere saepe a nam magni ipsa quaerat quasi.</div>
+                <div class="panel_choice-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque hic
+                    iure
+                    aperiam tenetur est repellendus distinctio dolor, cumque, similique laboriosam asperiores atque
+                    facere saepe a nam magni ipsa quaerat quasi.</div>
+            </div>
+        </div>
+    </aside>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

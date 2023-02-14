@@ -1,0 +1,742 @@
+html, body{
+    height: 100%;
+}
+body{
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style: none;
+}
+
+.wrapper{
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    /* background-image: url(../assets/images/map_realistic.png);
+    background-size: 200%;
+    background-repeat: no-repeat; */
+}
+.left{
+    width: 30%;
+    height: 100vh;
+    background-color: cadetblue;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: none;
+}
+.panel {
+    width: calc(100%-20px);
+    margin: 0 10px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.panel_list {
+    width: 30%;
+    min-height: 100vh;
+    background-color: chartreuse;
+}
+.panel_choice {
+    width: 50%;
+    min-height: 300px;
+    background-color: white;
+}
+.panel_choice-item {
+    margin-bottom: 20px;
+    background-color: chocolate;
+}
+/* общий стиль для контейнера иконки */
+.icon_layer-box{
+    position: absolute;
+    /* overflow: hidden; */
+    height: 32px;
+    width: 32px;
+    transform: translate(-50%, -50%);
+}
+/* контроль размера картинки внутри блока иконки */
+.icon_layer-box > img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 0px rgb(46, 46, 46);
+    border: 2px solid #000;
+}
+.popup {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 340px;
+    background-color: #c7c7c7;
+    padding: 12px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translate(-50vw, -200vh);
+}
+.popup.popup_active{
+    opacity: 1;
+    transform: translate(0, 0);
+    /* transition: cubic-bezier(0.165, 0.84, 0.44, 1); */
+}
+.popup h3{
+    margin-bottom: 12px;
+}
+.popup p{
+    margin-bottom: 12px;
+}
+/* .popup_airport {
+} */
+.popup_gallery {
+    display: flex;
+    min-height: 165px;
+    flex-direction: column;
+    gap: 6px;
+}
+.popup_gallery img{
+    width: 100%;
+    border-radius: 6px;
+}
+.slick-arrow{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 36px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slick-prev{
+    z-index: 1000;
+    left: -24px;
+}
+.slick-next{
+    right: -24px;
+}
+/* координаты отдельного контейнера с иконкой */
+.position_box-airport{
+    top: 118px;
+    left: 1008px;
+}
+.position_box-subway-mont{
+    top: 310px;
+    left: 588px;
+}
+.position_box-subway-cala{
+    top: 1118px;
+    left: 1787px;
+}
+.position_box-subway-fern{
+    top: 1996px;
+    left: 1344px;
+}
+.position_box-art-gallery{
+    top: 1196px;
+    left: 1934px;
+}
+.position_box-florist{
+    top: 2050px;
+    left: 1372px;
+}
+.position_box-apartment-buildings-fern-1{
+    top: 1996px;
+    left: 1258px;
+}
+.position_box-apartment-buildings-fern-2{
+    top: 1938px;
+    left: 1347px;
+}
+.position_box-apartment-buildings-fern-3{
+    top: 2046px;
+    left: 1338px;
+}
+.position_box-apartment-buildings-mont-1{
+    top: 246px;
+    left: 510px;
+}
+.position_box-apartment-buildings-mont-2{
+    top: 510px;
+    left: 602px;
+}
+.position_box-apartment-buildings-mont-3{
+    top: 506px;
+    left: 662px;
+}
+.position_box-apartment-buildings-mont-4{
+    top: 433px;
+    left: 561px;
+}
+.position_box-apartment-buildings-mont-5{
+    top: 256px;
+    left: 582px;
+}
+.position_box-apartment-buildings-chester{
+    top: 660px;
+    left: 910px;
+}
+.position_box-apartment-buildings-cala-1{
+    top: 1136px;
+    left: 1922px; 
+}
+.position_box-apartment-buildings-cala-2{
+    top: 1074px;
+    left: 1770px; 
+}
+.position_box-apartment-buildings-cala-3{
+    top: 1186px;
+    left: 1738px; 
+}
+.position_box-apartment-buildings-cala-4{
+    top: 1138px;
+    left: 1868px; 
+}
+.position_box-bank-cala-1{
+    top: 1074px;
+    left: 1802px; 
+}
+.position_box-bank-fern{
+    top: 2046px;
+    left: 1286px;
+}
+.position_box-bank-mont{
+    top: 260px;
+    left: 576px;
+}
+.position_box-gas-station-chester{
+    top: 710px;
+    left: 872px;
+}
+.position_box-gas-station-fern{
+    top: 1912px;
+    left: 1394px;
+}
+.position_box-gas-station-cala{
+    top: 1244px;
+    left: 1798px; 
+}
+.position_box-boat-shop{
+    top: 570px;
+    left: 456px;
+}
+.position_box-car-repair{
+    top: 218px;
+    left: 566px;
+}
+.position_box-farm{
+    top: 814px;
+    left: 704px;
+}
+.position_box-old-guns-shop{
+    top: 1906px;
+    left: 1348px;   
+}
+.position_box-resource-trader{
+    top: 336px;
+    left: 484px;
+}
+.position_box-gun-shop{
+    top: 1078px;
+    left: 2026px;
+}
+.position_box-outdoors-cala{
+    top: 1040px;
+    left: 2026px;
+}
+.position_box-outdoors-fern{
+    top: 2068px;
+    left: 1392px;
+}
+.position_box-outdoors-mont{
+    top: 314px;
+    left: 494px;
+}
+.position_box-electronic-shop{
+    top: 1040px;
+    left: 2050px;
+}
+.position_box-weed-florist{
+    top: 1022px;
+    left: 2088px;
+}
+.position_box-weed-florist{
+    top: 1022px;
+    left: 2088px;
+}
+.position_box-cloths-cool-mall{
+    top: 1078px;
+    left: 2088px;
+}
+.position_box-cloths-cool-mont{
+    top: 486px;
+    left: 648px;
+}
+.position_box-cloths-mont{
+    top: 424px;
+    left: 586px;
+}
+.position_box-fast-food-mall{
+    top: 1106px;
+    left: 2052px;
+}
+.position_box-grocery{
+    top: 1126px;
+    left: 2106px;
+}
+.position_box-pd-station-mall{
+    top: 1130px;
+    left: 2034px;
+}
+.position_box-cloths{
+    top: 1078px;
+    left: 2052px;
+}
+.position_box-forniture{
+    top: 1156px;
+    left: 2052px;
+}
+.position_box-bank-mall{
+    top: 1156px;
+    left: 2092px;
+}
+.position_box-hospital-mall{
+    top: 1186px;
+    left: 2092px;
+}
+.position_box-car-shop{
+    top: 1190px;
+    left: 2040px;
+}
+.position_box-mansion-cala-1{
+    top: 1318px;
+    left: 2086px;
+}
+.position_box-mansion-cala-2{
+    top: 1318px;
+    left: 2004px;
+}
+.position_box-mansion-cala-3{
+    top: 1276px;
+    left: 1934px;
+}
+.position_box-mansion-big-sur-1{
+    top: 1364px;
+    left: 570px;
+}
+.position_box-mansion-big-sur-2{
+    top: 1535px;
+    left: 560px;
+}
+.position_box-mansion-la-palma-1{
+    top: 1986px;
+    left: 674px;
+}
+.position_box-mansion-la-palma-2{
+    top: 2082px;
+    left: 694px;
+}
+.position_box-mansion-la-palma-3{
+    top: 1916px;
+    left: 776px;
+}
+.position_box-mansion-la-palma-4{
+    top: 1993px;
+    left: 798px;
+}
+.position_box-mansion-la-palma-5{
+    top: 2089px;
+    left: 814px;
+}
+.position_box-cafe-cala-1{
+    top: 1236px;
+    left: 1853px;
+}
+.position_box-cafe-cala-2{
+    top: 1112px;
+    left: 1728px;
+}
+.position_box-cafe-mont-1{
+    top: 304px;
+    left: 540px;
+}
+.position_box-cafe-mont-2{
+    top: 444px;
+    left: 536px;
+}
+.position_box-cafe-rockwall{
+    top: 1292px;
+    left: 774px;
+}
+.position_box-hospital-cala{
+    top: 1066px;
+    left: 1854px;
+}
+.position_box-hospital-mont{
+    top: 450px;
+    left: 592px;
+}
+.position_box-garage-cala{
+    top: 1020px;
+    left: 1853px;
+}
+.position_box-garage-fern-1{
+    top: 2126px;
+    left: 1240px;
+}
+.position_box-garage-fern-2{
+    top: 2044px;
+    left: 1447px;
+}
+.position_box-garage-fern-3{
+    top: 1973px;
+    left: 1400px;
+}
+.position_box-garage-mont{
+    top: 284px;
+    left: 498px;
+}
+.position_box-school{
+    top: 980px;
+    left: 1840px;
+}
+.position_box-pd-station-cala{
+    top: 928px;
+    left: 1904px;
+}
+.position_box-pd-station-fern{
+    top: 2122px;
+    left: 1342px;
+}
+.position_box-pd-station-fern{
+    top: 360px;
+    left: 550px;
+}
+.position_box-townhall{
+    top: 988px;
+    left: 1921px;
+}
+.position_box-hangar-island-1{
+    top: 928px;
+    left: 276px;
+}
+.position_box-hangar-island-2{
+    top: 910px;
+    left: 246px;
+}
+.position_box-hangar-island-3{
+    top: 853px;
+    left: 280px;
+}
+.position_box-hangar-island-4{
+    top: 836px;
+    left: 250px;
+}
+.position_box-hangar-island-5{
+    top: 820px;
+    left: 222px;
+}
+.position_box-yacht-1{
+    top: 653px;
+    left: 54px;
+}
+.position_box-yacht-2{
+    top: 928px;
+    left: 526px;
+}
+.position_box-yacht-3{
+    top: 1453px;
+    left: 340px;
+}
+.position_box-yacht-4{
+    top: 2088px;
+    left: 422px;
+}
+.position_box-hangar-1{
+    top: 1418px;
+    left: 1403px;
+}
+.position_box-hangar-2{
+    top: 1418px;
+    left: 1436px;
+}
+.position_box-hangar-3{
+    top: 1418px;
+    left: 1470px;
+}
+.position_box-hangar-4{
+    top: 28px;
+    left: 1008px;
+}
+.position_box-hangar-5{
+    top: 28px;
+    left: 965px;
+}
+.position_box-hangar-6{
+    top: 28px;
+    left: 922px;
+}
+.position_box-hangar-7{
+    top: 28px;
+    left: 879px;
+}
+.position_box-hangar-8{
+    top: 28px;
+    left: 836px;
+}
+.position_box-hangar-9{
+    top: 28px;
+    left: 793px;
+}
+.position_box-mansion-island-1{
+    top: 1040px;
+    left: 142px;
+}
+.position_box-mansion-island-2{
+    top: 1018px;
+    left: 248px;
+}
+.position_box-mansion-island-3{
+    top: 1016px;
+    left: 372px;
+}
+.position_box-mansion-island-4{
+    top: 1114px;
+    left: 287px;
+}
+.position_box-mansion-island-5{
+    top: 1316px;
+    left: 124px;
+}
+.position_box-mansion-island-6{
+    top: 1516px;
+    left: 180px;
+}
+.position_oil-rig{
+    top: 1932px;
+    left: 164px;
+}
+.position_box-cafe-island{
+    top: 1052px;
+    left: 412px;
+}
+.position_box-cocaine{
+    top: 912px;
+    left: 150px;
+}
+.position_box-greenhouse-1{
+    top: 762px;
+    left: 1214px;
+}
+.position_box-greenhouse-2{
+    top: 786px;
+    left: 1245px;
+}
+.position_box-greenhouse-3{
+    top: 777px;
+    left: 1284px;
+}
+.position_box-greenhouse-4{
+    top: 818px;
+    left: 1268px;
+}
+.position_box-greenhouse-5{
+    top: 806px;
+    left: 1320px;
+}
+.position_box-greenhouse-6{
+    top: 848px;
+    left: 1292px;
+}
+.position_box-apartment-mont-beach{
+    top: 696px;
+    left: 614px;
+}
+.position_box-apartment-cala-river-1{
+    top: 1116px;
+    left: 1334px;
+}
+.position_box-apartment-cala-river-2{
+    top: 1134px;
+    left: 1348px;
+}
+.position_box-apartment-lumberjack-1{
+    top: 1980px;
+    left: 1994px;
+}
+.position_box-apartment-lumberjack-2{
+    top: 1986px;
+    left: 1968px;
+}
+.position_chemicals{
+    top: 422px;
+    left: 291px;
+}
+.position_box-hardware-shop-mall{
+    top: 1050px;
+    left: 2088px;
+}
+.position_box-hardware-shop-fern{
+    top: 1956px;
+    left: 1346px;  
+}
+.position_box-mechanic{
+    top: 1134px;
+    left: 1822px;
+}
+.position_box-fast-food-fern{
+    top: 2014px;
+    left: 1394px;
+}
+.position_box-fast-food-chester{
+    top: 682px;
+    left: 952px;
+}
+.position_box-lumberjack{
+    top: 1870px;
+    left: 1824px;
+}
+.position_box-mine-1{
+    top: 728px;
+    left: 1738px;
+}
+.position_box-mine-2{
+    top: 944px;
+    left: 1240px;
+}
+.position_box-smelter{
+    top: 162px;
+    left: 1738px;
+}
+.position_box-miner{
+    top: 710px;
+    left: 1752px;
+}
+.position_box-2-story-house-elm-1{
+    top: 1648px;
+    left: 1522px;
+}
+.position_box-1-story-house-elm-2{
+    top: 1686px;
+    left: 1544px;
+}
+.position_box-1-story-house-elm-3{
+    top: 1726px;
+    left: 1532px;
+}
+.position_box-1-story-house-elm-4{
+    top: 1746px;
+    left: 1496px;
+}
+.position_box-1-story-house-elm-5{
+    top: 1734px;
+    left: 1460px;
+}
+.position_box-1-story-house-elm-6{
+    top: 1696px;
+    left: 1436px;
+}
+.position_box-1-story-house-elm-7{
+    top: 1660px;
+    left: 1446px;
+}
+.position_box-1-story-house-tower-lumberjack{
+    top: 1878px;
+    left: 1634px;
+}
+.position_box-2-story-house-lumberjack{
+    top: 1856px;
+    left: 1858px;
+}
+.position_box-1-story-house-lumberjack{
+    top: 1826px;
+    left: 1828px;
+}
+.position_box-1-story-house-hills-1{
+    top: 1832px;
+    left: 950px;
+}
+.position_box-1-story-house-hills-2{
+    top: 1830px;
+    left: 1020px;
+}
+.position_box-1-story-house-hills-3{
+    top: 1796px;
+    left: 934px;
+}
+.position_box-1-story-house-hills-4{
+    top: 1790px;
+    left: 1016px;
+}
+.position_box-1-story-house-hills-5{
+    top: 1754px;
+    left: 920px;
+}
+.position_box-1-story-house-hills-6{
+    top: 1746px;
+    left: 994px;
+}
+.position_box-1-story-house-hills-7{
+    top: 1716px;
+    left: 902px;
+}
+.position_box-1-story-house-hills-8{
+    top: 1714px;
+    left: 966px;
+}
+.position_box-1-story-house-rockwall-1{
+    top: 1460px;
+    left: 932px;
+}
+.position_box-1-story-house-rockwall-2{
+    top: 1464px;
+    left: 994px;
+}
+.position_box-2-story-house-rockwall-3{
+    top: 1424px;
+    left: 974px;
+}
+.position_box-1-story-house-rockwall-4{
+    top: 1428px;
+    left: 904px;
+}
+.position_box-1-story-house-rockwall-5{
+    top: 1390px;
+    left: 948px;
+}
+.position_box-1-story-house-rockwall-6{
+    top: 1378px;
+    left: 870px;
+}
+.position_box-2-story-house-rockwall-7{
+    top: 1346px;
+    left: 918px;
+}
+.position_box-1-story-house-rockwall-8{
+    top: 1324px;
+    left: 858px;
+}
+.position_box-1-story-house-rockwall-9{
+    top: 1300px;
+    left: 914px;
+}
+.position_box-1-story-house-rockwall-10{
+    top: 1276px;
+    left: 858px;
+}
+.position_box-1-story-house-rockwall-11{
+    top: 1254px;
+    left: 914px;
+}
+.position_box-1-story-house-rockwall-12{
+    top: 1226px;
+    left: 1012px;
+}
+
+
+
+
