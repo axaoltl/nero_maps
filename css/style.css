@@ -372,6 +372,14 @@ ul, li{
     top: 1292px;
     left: 774px;
 }
+.position_box-cafe-big-sur{
+    top: 1432px;
+    left: 708px;
+}
+.position_box-cafe-big-sur-beach{
+    top: 1346px;
+    left: 520px;
+}
 .position_box-hospital-cala{
     top: 1066px;
     left: 1854px;
@@ -412,7 +420,7 @@ ul, li{
     top: 2122px;
     left: 1342px;
 }
-.position_box-pd-station-fern{
+.position_box-pd-station-mont{
     top: 360px;
     left: 550px;
 }
@@ -609,8 +617,8 @@ ul, li{
     left: 1240px;
 }
 .position_box-smelter{
-    top: 162px;
-    left: 1738px;
+    top: 164px;
+    left: 1740px;
 }
 .position_box-miner{
     top: 710px;
@@ -736,6 +744,36 @@ ul, li{
     top: 1226px;
     left: 1012px;
 }
+.position_box-apartment-mountains{
+    top: 556px;
+    left: 1378px;
+}
+.position_box-1-story-house-belmont{
+    top: 800px;
+    left: 1614px;
+}
+.position_box-1-story-house-big-sur-1{
+    top: 1458px;
+    left: 618px;
+}
+.position_box-1-story-house-big-sur-2{
+    top: 1420px;
+    left: 640px;
+}
+.position_box-1-story-house-big-sur-beach-1{
+    top: 1262px;
+    left: 614px;
+}
+.position_box-apartment-big-sur-beach{
+    top: 1290px;
+    left: 574px;
+}
+.position_box-drug-lab{
+    top: 1194px;
+    left: 1106px;
+}
+
+
 
 
 
