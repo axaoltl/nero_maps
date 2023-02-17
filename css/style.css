@@ -157,8 +157,8 @@ ul, li{
     left: 1338px;
 }
 .position_box-apartment-buildings-mont-1{
-    top: 246px;
-    left: 510px;
+    top: 248px;
+    left: 500px;
 }
 .position_box-apartment-buildings-mont-2{
     top: 510px;
@@ -173,8 +173,8 @@ ul, li{
     left: 561px;
 }
 .position_box-apartment-buildings-mont-5{
-    top: 256px;
-    left: 582px;
+    top: 262px;
+    left: 588px;
 }
 .position_box-apartment-buildings-chester{
     top: 660px;
@@ -205,8 +205,8 @@ ul, li{
     left: 1286px;
 }
 .position_box-bank-mont{
-    top: 260px;
-    left: 576px;
+    top: 256px;
+    left: 572px;
 }
 .position_box-gas-station-chester{
     top: 710px;
@@ -284,9 +284,13 @@ ul, li{
     top: 1106px;
     left: 2052px;
 }
-.position_box-grocery{
+.position_box-grocery-mall{
     top: 1126px;
     left: 2106px;
+}
+.position_box-grocery-mont{
+    top: 220px;
+    left: 500px;
 }
 .position_box-pd-station-mall{
     top: 1130px;
@@ -381,8 +385,8 @@ ul, li{
     left: 520px;
 }
 .position_box-hospital-cala{
-    top: 1066px;
-    left: 1854px;
+    top: 1060px;
+    left: 1850px;
 }
 .position_box-hospital-mont{
     top: 450px;
@@ -407,6 +411,10 @@ ul, li{
 .position_box-garage-mont{
     top: 284px;
     left: 498px;
+}
+.position_box-garage-airport{
+    top: 230px;
+    left: 908px;
 }
 .position_box-school{
     top: 980px;
@@ -832,9 +840,147 @@ ul, li{
     top: 374px;
     left: 1198px;
 }
-
-
-
-
-
-
+.position_box-apartment-mont-1{
+    top: 374px;
+    left: 710px;
+}
+.position_box-apartment-mont-2{
+    top: 332px;
+    left: 688px;
+}
+.position_box-apartment-mont-3{
+    top: 444px;
+    left: 694px;
+}
+.position_box-apartment-docks-1{
+    top: 318px;
+    left: 452px;
+}
+.position_box-apartment-docks-2{
+    top: 424px;
+    left: 492px;
+}
+.position_box-apartment-docks-3{
+    top: 514px;
+    left: 430px;
+}
+.position_box-farmhouse-1{
+    top: 290px;
+    left: 450px;
+}
+.position_box-farmhouse-2{
+    top: 338px;
+    left: 446px;
+}
+.position_box-farmhouse-3{
+    top: 356px;
+    left: 452px;
+}
+.position_box-farmhouse-4{
+    top: 382px;
+    left: 460px;
+}
+.position_box-farmhouse-5{
+    top: 496px;
+    left: 552px;
+}
+.position_box-farmhouse-6{
+    top: 530px;
+    left: 564px;
+}
+.position_box-shop-mont-1{
+    top: 244px;
+    left: 518px;
+}
+.position_box-shop-mont-2{
+    top: 188px;
+    left: 502px;
+}
+.position_box-shop-mont-3{
+    top: 152px;
+    left: 556px;
+}
+.position_box-shop-mont-4{
+    top: 154px;
+    left: 600px;
+}
+.position_box-shop-mont-5{
+    top: 192px;
+    left: 626px;
+}
+.position_box-shop-mont-6{
+    top: 218px;
+    left: 636px;
+}
+.position_box-shop-mont-7{
+    top: 240px;
+    left: 646px;
+}
+.position_box-shop-mont-8{
+    top: 308px;
+    left: 518px;
+}
+.position_box-shop-mont-9{
+    top: 358px;
+    left: 494px;
+}
+.position_box-shop-mont-10{
+    top: 380px;
+    left: 502px;
+}
+.position_box-shop-mont-11{
+    top: 458px;
+    left: 568px;
+}
+.position_box-shop-mont-12{
+    top: 274px;
+    left: 572px;
+}
+.position_box-garbage-bin-mont{
+    top: 530px;
+    left: 668px;
+}
+.position_box-1-story-house-mont-beach-1{
+    top: 802px;
+    left: 598px;
+    }
+.position_box-1-story-house-mont-beach-2{
+    top: 1540px;
+    left: 494px;
+}
+.position_box-1-story-house-mont-beach-3{
+    top: 1772px;
+    left: 514px;
+}
+.position_box-1-story-house-mont-beach-4{
+    top: 1990px;
+    left: 584px;
+}
+.position_box-meth{
+    top: 1490px;
+    left: 1862px;
+}
+.position_box-shop-cala-1{
+    top: 1164px;
+    left: 1812px;
+}
+.position_box-shop-cala-2{
+    top: 1186px;
+    left: 1806px;
+}
+.position_box-shop-cala-3{
+    top: 1186px;
+    left: 1824px;
+}
+.position_box-garbage-bin-cala-1{
+    top: 1074px;
+    left: 1740px;
+}
+.position_box-garbage-bin-cala-2{
+    top: 1074px;
+    left: 1866px;
+}
+.position_box-garbage-bin-lumberjack{
+    top: 1882px;
+    left: 1872px;
+}
