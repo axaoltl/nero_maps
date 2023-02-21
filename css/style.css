@@ -72,7 +72,7 @@ ul, li{
     position: absolute;
     top: 100%;
     left: 100%;
-    width: 340px;
+    width: 350px;
     background-color: #c7c7c7;
     padding: 12px;
     border-radius: 8px;
@@ -146,7 +146,7 @@ ul, li{
 }
 .position_box-apartment-buildings-fern-1{
     top: 1996px;
-    left: 1258px;
+    left: 1262px;
 }
 .position_box-apartment-buildings-fern-2{
     top: 1938px;
@@ -185,8 +185,8 @@ ul, li{
     left: 1922px; 
 }
 .position_box-apartment-buildings-cala-2{
-    top: 1074px;
-    left: 1770px; 
+    top: 1064px;
+    left: 1766px; 
 }
 .position_box-apartment-buildings-cala-3{
     top: 1186px;
@@ -214,7 +214,7 @@ ul, li{
 }
 .position_box-gas-station-fern{
     top: 1912px;
-    left: 1394px;
+    left: 1386px;
 }
 .position_box-gas-station-cala{
     top: 1244px;
@@ -300,9 +300,13 @@ ul, li{
     top: 1078px;
     left: 2052px;
 }
-.position_box-forniture{
+.position_box-forniture-mall{
     top: 1156px;
     left: 2052px;
+}
+.position_box-forniture-fern{
+    top: 1996px;
+    left: 1244px;
 }
 .position_box-bank-mall{
     top: 1156px;
@@ -408,6 +412,10 @@ ul, li{
     top: 1973px;
     left: 1400px;
 }
+.position_box-garage-fern-4{
+    top: 1918px;
+    left: 1406px;
+}
 .position_box-garage-mont{
     top: 284px;
     left: 498px;
@@ -431,6 +439,10 @@ ul, li{
 .position_box-pd-station-mont{
     top: 360px;
     left: 550px;
+}
+.position_box-pd-station-forest{
+    top: 450px;
+    left: 1952px;
 }
 .position_box-townhall{
     top: 988px;
@@ -972,6 +984,10 @@ ul, li{
     top: 1186px;
     left: 1824px;
 }
+.position_box-shop-cala-4{
+    top: 1082px;
+    left: 1766px; 
+}
 .position_box-garbage-bin-cala-1{
     top: 1074px;
     left: 1740px;
@@ -984,3 +1000,22 @@ ul, li{
     top: 1882px;
     left: 1872px;
 }
+.position_box-garbage-bin-fern{
+    top: 1878px;
+    left: 1392px;
+}
+.position_box-shop-fern-1{
+    top: 1186px;
+    left: 1824px;
+}
+.position_box-shop-fern-2{
+    top: 1186px;
+    left: 1824px;
+}
+   
+
+
+
+
+
+
