@@ -60,6 +60,7 @@ ul, li{
     height: 32px;
     width: 32px;
     transform: translate(-50%, -50%);
+    z-index: 0;
 }
 /* контроль размера картинки внутри блока иконки */
 .icon_layer-box > img{
@@ -76,13 +77,15 @@ ul, li{
     background-color: #c7c7c7;
     padding: 12px;
     border-radius: 8px;
-    opacity: 0;
-    transform: translate(-50vw, -200vh);
+    /* display: none; */
+    transform: translate(-100vw, -200vh);
+    opacity: 0.75;
 }
 .popup.popup_active{
-    opacity: 1;
+    /* display: block; */
     transform: translate(0, 0);
     /* transition: cubic-bezier(0.165, 0.84, 0.44, 1); */
+    opacity: 1;
 }
 .popup h3{
     margin-bottom: 12px;
@@ -90,8 +93,6 @@ ul, li{
 .popup p{
     margin-bottom: 12px;
 }
-/* .popup_airport {
-} */
 .popup_gallery {
     display: flex;
     min-height: 165px;
@@ -102,6 +103,17 @@ ul, li{
     width: 100%;
     border-radius: 6px;
 }
+/* .slick-current.slick-active{
+    width: 100%;
+    min-height: 165px;
+} */
+/* .slick-list .slick-slide.slick-current.slick-active{
+    width: 326px !important;
+    height: 165px;
+} */
+/* .slick-track{
+    transform: translate3d(-163px, 0, 0) !important;
+} */
 .slick-arrow{
     background: transparent;
     border: none;
