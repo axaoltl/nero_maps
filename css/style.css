@@ -78,7 +78,7 @@ ul, li{
     padding: 12px;
     border-radius: 8px;
     /* display: none; */
-    transform: translate(-100vw, -200vh);
+    transform: translate(-130vw, -200vh);
     opacity: 0.75;
 }
 .popup.popup_active{
@@ -453,8 +453,8 @@ ul, li{
     left: 550px;
 }
 .position_box-pd-station-forest{
-    top: 450px;
-    left: 1952px;
+    top: 410px;
+    left: 2042px;
 }
 .position_box-townhall{
     top: 988px;
