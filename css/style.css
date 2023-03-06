@@ -15,9 +15,10 @@ ul, li{
 }
 
 .wrapper{
-    min-width: 100%;
-    min-height: 100%;
+    /* min-width: 100%;
+    min-height: 100%; */
     position: relative;
+    overflow-x: auto;
     /* background-image: url(../assets/images/map_realistic.png);
     background-size: 200%;
     background-repeat: no-repeat; */
@@ -60,7 +61,6 @@ ul, li{
     height: 32px;
     width: 32px;
     transform: translate(-50%, -50%);
-    z-index: 0;
 }
 /* контроль размера картинки внутри блока иконки */
 .icon_layer-box > img{
@@ -68,6 +68,7 @@ ul, li{
     border-radius: 50%;
     box-shadow: 2px 2px 2px 0px rgb(46, 46, 46);
     border: 2px solid #000;
+    position: relative;
 }
 .popup {
     position: absolute;
@@ -78,14 +79,16 @@ ul, li{
     padding: 12px;
     border-radius: 8px;
     /* display: none; */
-    transform: translate(-130vw, -200vh);
-    opacity: 0.75;
+    transform: translate(-130vw, -220vh);
 }
 .popup.popup_active{
     /* display: block; */
-    transform: translate(0, 0);
+    transform: translate(14px, 14px);
     /* transition: cubic-bezier(0.165, 0.84, 0.44, 1); */
     opacity: 1;
+}
+.popup.popup_side.popup_active{
+    transform: translate(-360px, -330px);
 }
 .popup h3{
     margin-bottom: 12px;
@@ -188,6 +191,10 @@ ul, li{
     top: 262px;
     left: 588px;
 }
+.position_box-apartment-buildings-mont-6{
+    top: 456px;
+    left: 580px;
+}
 .position_box-apartment-buildings-chester{
     top: 660px;
     left: 910px;
@@ -241,8 +248,8 @@ ul, li{
     left: 566px;
 }
 .position_box-farm{
-    top: 814px;
-    left: 704px;
+    top: 802px;
+    left: 720px;
 }
 .position_box-old-guns-shop{
     top: 1906px;
@@ -406,7 +413,7 @@ ul, li{
 }
 .position_box-hospital-mont{
     top: 450px;
-    left: 592px;
+    left: 596px;
 }
 .position_box-garage-cala{
     top: 1020px;
@@ -459,6 +466,10 @@ ul, li{
 .position_box-townhall{
     top: 988px;
     left: 1921px;
+}
+.position_box-prodef{
+    top: 298px;
+    left: 1576px;
 }
 .position_box-hangar-island-1{
     top: 928px;
@@ -608,10 +619,16 @@ ul, li{
     top: 1980px;
     left: 1994px;
 }
+/* .popup_side.position_box-apartment-lumberjack-1{
+    transform: translate(-359px, -329px);
+} */
 .position_box-apartment-lumberjack-2{
     top: 1986px;
     left: 1968px;
 }
+/* .popup_side.position_box-apartment-lumberjack-2{
+    transform: translate(-359px, -329px);
+} */
 .position_chemicals{
     top: 422px;
     left: 291px;
@@ -953,12 +970,16 @@ ul, li{
     left: 502px;
 }
 .position_box-shop-mont-11{
-    top: 458px;
-    left: 568px;
+    top: 462px;
+    left: 562px;
 }
 .position_box-shop-mont-12{
     top: 274px;
     left: 572px;
+}
+.position_box-shop-beach{
+    top: 60px;
+    left: 262px;
 }
 .position_box-garbage-bin-mont{
     top: 530px;
@@ -1017,17 +1038,13 @@ ul, li{
     left: 1392px;
 }
 .position_box-shop-fern-1{
-    top: 1186px;
-    left: 1824px;
+    top: 1972px;
+    left: 1346px;
 }
 .position_box-shop-fern-2{
-    top: 1186px;
-    left: 1824px;
+    top: 2094px;
+    left: 1448px;
 }
-   
-
-
-
-
-
-
+.popup_side{
+    transform: translate(-200vw, -200vh);
+}
