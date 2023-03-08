@@ -443,6 +443,10 @@ ul, li{
     top: 230px;
     left: 908px;
 }
+.position_box-garage-industrial{
+    top: 136px;
+    left: 1587px;
+}
 .position_box-school{
     top: 980px;
     left: 1840px;
@@ -913,6 +917,10 @@ ul, li{
     top: 1462px;
     left: 1818px;
 }
+.position_box-apartment-fern-road{
+    top: 1676px;
+    left: 1322px;
+}
 .position_box-farmhouse-1{
     top: 290px;
     left: 450px;
@@ -926,14 +934,10 @@ ul, li{
     left: 452px;
 }
 .position_box-farmhouse-4{
-    top: 382px;
-    left: 460px;
-}
-.position_box-farmhouse-5{
     top: 496px;
     left: 552px;
 }
-.position_box-farmhouse-6{
+.position_box-farmhouse-5{
     top: 530px;
     left: 564px;
 }
