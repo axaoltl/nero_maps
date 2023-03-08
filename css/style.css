@@ -18,7 +18,7 @@ ul, li{
     /* min-width: 100%;
     min-height: 100%; */
     position: relative;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     /* background-image: url(../assets/images/map_realistic.png);
     background-size: 200%;
     background-repeat: no-repeat; */
@@ -904,6 +904,14 @@ ul, li{
 .position_box-apartment-docks-3{
     top: 514px;
     left: 430px;
+}
+.position_box-apartment-trainyard-1{
+    top: 1558px;
+    left: 1868px;
+}
+.position_box-apartment-trainyard-2{
+    top: 1462px;
+    left: 1818px;
 }
 .position_box-farmhouse-1{
     top: 290px;
