@@ -228,8 +228,8 @@ ul, li{
     left: 572px;
 }
 .position_box-gas-station-chester{
-    top: 710px;
-    left: 872px;
+    top: 714px;
+    left: 860px;
 }
 .position_box-gas-station-fern{
     top: 1912px;
@@ -425,7 +425,7 @@ ul, li{
 }
 .position_box-garage-fern-1{
     top: 2126px;
-    left: 1240px;
+    left: 1254px;
 }
 .position_box-garage-fern-2{
     top: 2044px;
@@ -436,7 +436,7 @@ ul, li{
     left: 1400px;
 }
 .position_box-garage-fern-4{
-    top: 1918px;
+    top: 1914px;
     left: 1406px;
 }
 .position_box-garage-mont{
@@ -450,6 +450,10 @@ ul, li{
 .position_box-garage-industrial{
     top: 136px;
     left: 1587px;
+}
+.position_box-garage-chester{
+    top: 704px;
+    left: 884px;
 }
 .position_box-school{
     top: 980px;
