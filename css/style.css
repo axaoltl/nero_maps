@@ -75,6 +75,10 @@ ul, li{
     top: 100%;
     left: 100%;
     width: 350px;
+    /* background-image: url(../assets/images/close-circle.svg);
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+    background-position: top 8px right 8px; */
     background-color: #c7c7c7;
     padding: 12px;
     border-radius: 8px;
@@ -83,9 +87,19 @@ ul, li{
 }
 .popup.popup_active{
     /* display: block; */
-    transform: translate(14px, 14px);
+    transform: translate(5%, 5%);
     /* transition: cubic-bezier(0.165, 0.84, 0.44, 1); */
     opacity: 1;
+}
+.popup.popup_active::after{
+    content: '';
+    background-image: url(../assets/images/close-circle.svg);
+    width: 26px;
+    height: 26px;
+    top: 6px;
+    right: 6px;
+    display: inline-block;
+    position: absolute;
 }
 .popup.popup_side.popup_active{
     transform: translate(-360px, -330px);
