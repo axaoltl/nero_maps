@@ -6,5 +6,6 @@ $('.popup_gallery').slick({
     nextArrow: '<button class="slick-next" aria-label="Next" type="button"><ion-icon name="chevron-forward-outline"></ion-icon></button>',
     cssEasing: 'cubic-bezier(0, 1.1, 0.15, 1)',
     speed: 500,
+    
 });
 // easing: 'easeOutElastic'
