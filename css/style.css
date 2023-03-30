@@ -1,6 +1,8 @@
 html, body{
     height: 100%;
-}
+    /* max-height: 2150px;
+    overflow: hidden; */
+} 
 body{
     position: relative;
     font-family: 'Source Sans Pro', sans-serif;
@@ -17,6 +19,7 @@ ul, li{
 .wrapper{
     /* min-width: 100%;
     min-height: 100%; */
+    /* overflow: auto; */
     position: relative;
     /* overflow-x: auto; */
     /* background-image: url(../assets/images/map_realistic.png);
@@ -83,7 +86,7 @@ ul, li{
     padding: 12px;
     border-radius: 8px;
     /* display: none; */
-    transform: translate(-130vw, -220vh);
+    transform: translate(-500vw, -500vh);
 }
 .popup.popup_active{
     /* display: block; */
@@ -91,18 +94,27 @@ ul, li{
     /* transition: cubic-bezier(0.165, 0.84, 0.44, 1); */
     opacity: 1;
 }
-.popup.popup_active::after{
-    content: '';
+.cross{
+    content: "";
     background-image: url(../assets/images/close-circle.svg);
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
     top: 6px;
     right: 6px;
     display: inline-block;
     position: absolute;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
 }
 .popup.popup_side.popup_active{
     transform: translate(-360px, -330px);
+}
+.popup.popup_side-left.popup_active {
+    transform: translate(-360px, 18px);
+}
+.popup.popup_side-right.popup_active {
+    transform: translate(18px, -330px);
 }
 .popup h3{
     margin-bottom: 12px;
@@ -324,6 +336,10 @@ ul, li{
 .position_box-grocery-mont{
     top: 220px;
     left: 500px;
+}
+.position_box-grocery-fern{
+    top: 2126px;
+    left: 1286px;
 }
 .position_box-pd-station-mall{
     top: 1130px;
@@ -1080,5 +1096,5 @@ ul, li{
     left: 1448px;
 }
 .popup_side{
-    transform: translate(-200vw, -200vh);
+    transform: translate(-500vw, -500vh);
 }
