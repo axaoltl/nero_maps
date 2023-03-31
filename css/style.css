@@ -162,12 +162,12 @@ ul, li{
 }
 /* координаты отдельного контейнера с иконкой */
 .position_box-airport{
-    top: 118px;
-    left: 1008px;
+    top: 84px;
+    left: 1024px;
 }
 .position_box-subway-mont{
-    top: 310px;
-    left: 588px;
+    top: 200px;
+    left: 602px;
 }
 .position_box-subway-cala{
     top: 1118px;
@@ -537,6 +537,10 @@ ul, li{
     top: 820px;
     left: 222px;
 }
+.position_box-hangar-island-6{
+    top: 878px;
+    left: 188px;
+}
 .position_box-yacht-1{
     top: 653px;
     left: 54px;
@@ -588,6 +592,10 @@ ul, li{
 .position_box-hangar-9{
     top: 28px;
     left: 793px;
+}
+.position_box-hangar-10{
+    top: 118px;
+    left: 1008px;
 }
 .position_box-mansion-island-1{
     top: 1040px;
